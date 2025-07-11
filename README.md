@@ -1,5 +1,4 @@
-# MGTA 461: Web Mining & Recommender System
-
+# [MGTA 461: Web Mining & Recommender System](https://huggingface.co/spaces/rsm-wew068/recipe-recommender-system)
 This course focuses on practical applications of machine learning in web mining contexts, including recommendation systems, text classification, and predictive modeling using real-world datasets.
 
 ## Homework Assignments
