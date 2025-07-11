@@ -1,0 +1,25 @@
+This assignment involves building recommendation models to predict user interactions with books on Goodreads. 
+I used collaborative filtering models for rating prediction and classification models for read prediction, aiming to exceed baseline performance.
+
+Read Prediction:
+	1.	Baseline:
+	•	A popularity-based baseline was used, predicting “1” for popular books and “0” otherwise.
+	2.	Model:
+	•	A Random Forest model was implemented with features like book_popularity and user_read_count.
+	•	Grid search was used to tune parameters, with the best settings achieving an accuracy of 50.5%.
+	3.	Results:
+	•	The Random Forest model’s accuracy was 50.5%, slightly above the baseline, indicating limited predictive power on this dataset.
+
+Rating Prediction:
+	1.	Baseline:
+	•	A baseline model using global and user-specific average ratings was implemented.
+	2.	Model (SVD):
+	•	An SVD model with grid search for parameter tuning was used, achieving an RMSE of 1.2099 with the best parameters.
+	3.	Model (NCF):
+	•	An NCF model was trained for 10 epochs, with the loss reducing from 3.7219 to 1.7784. Although NCF showed steady learning, the tuned SVD model achieved better validation RMSE.
+	4.	Results:
+	•	The SVD model’s RMSE of 1.2099 outperformed the baseline and served as the primary model for rating prediction.
+
+The SVD model performed well on the rating prediction task, with reasonable RMSE for a collaborative filtering approach. 
+The Random Forest model showed moderate success in read prediction but had limited accuracy, possibly due to data sparsity. 
+Future work could involve adding more features to the read prediction model to enhance its accuracy.
